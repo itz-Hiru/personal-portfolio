@@ -97,7 +97,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
+  
 ### 🌟 Star this repo if you find it useful!
+
 [![GitHub stars](https://img.shields.io/github/stars/itz-Hiru/personal-portfolio?style=social)](https://github.com/yourusername/portfolio/stargazers)
+
 Made with ❤️ by [Hirumitha Kuladewaa](https://github.com/itz-Hiru)
+
 </div>
