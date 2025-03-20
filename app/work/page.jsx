@@ -51,11 +51,11 @@ const projects = [
   },
   {
     num: "04",
-    category: "Website Developer",
+    category: "Website Developing",
     title: "My Scanner",
     link: "https://itz-hiru.github.io/My-Scanner/",
     description:
-      "An intuitive web app for managing income, expenses, and viewing summaries with charts and tables.",
+      "An intuitive website for create and scan QR codes.",
     stack: [
       "React",
       "JavaScript",
@@ -73,7 +73,7 @@ const projects = [
     title: "Budget Buddy",
     link: "https://www.mediafire.com/file/vs2txte69bvcm3d/budget-buddy",
     description:
-      "An intuitive web app for managing income, expenses, and viewing summaries with charts and tables.",
+      "An intuitive android app for managing income, expenses, and viewing summaries with charts and tables.",
     stack: ["Kotlin", "MpAndroidChart", "AndroidNavigation", "itextpdf"],
     image: "/assets/work/budget-buddy.jpg",
     github: "https://github.com/itz-Hiru/budget-buddy",
@@ -84,10 +84,21 @@ const projects = [
     title: "Care Bridge",
     link: "https://www.mediafire.com/file/zcqpe3oqmucudcd/care-bridge",
     description:
-      "An intuitive web app for managing income, expenses, and viewing summaries with charts and tables.",
+      "An intuitive android app for helping required people.",
     stack: ["Java", "Firebase", "AndroidNavigation", "MpAndroidChart", "Zixin"],
     image: "/assets/work/care-bridge.jpg",
     github: "https://github.com/itz-Hiru/care-bridge",
+  },
+  {
+    num: "07",
+    category: "Website Developing",
+    title: "Audition Hive",
+    link: "https://github.com/itz-Hiru/Blogging-Website-Frontend",
+    description:
+      "An intuitive website for creating, reading blogs.",
+    stack: ["Javascript", "Firebase", "AWS", "Tailwind", "ReactVite"],
+    image: "/assets/work/audition-hive.png",
+    github: "https://github.com/itz-Hiru/Blogging-Website-Backend",
   },
 ];
 
@@ -146,7 +157,7 @@ const Work = () => {
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>
-                          {project.num === "04"
+                          {project.num === "04" && "07"
                             ? "Live Project"
                             : "Download App"}
                         </p>
