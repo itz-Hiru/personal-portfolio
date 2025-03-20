@@ -54,8 +54,7 @@ const projects = [
     category: "Website Developing",
     title: "My Scanner",
     link: "https://itz-hiru.github.io/My-Scanner/",
-    description:
-      "An intuitive website for create and scan QR codes.",
+    description: "An intuitive website for create and scan QR codes.",
     stack: [
       "React",
       "JavaScript",
@@ -83,8 +82,7 @@ const projects = [
     category: "Android Application",
     title: "Care Bridge",
     link: "https://www.mediafire.com/file/zcqpe3oqmucudcd/care-bridge",
-    description:
-      "An intuitive android app for helping required people.",
+    description: "An intuitive android app for helping required people.",
     stack: ["Java", "Firebase", "AndroidNavigation", "MpAndroidChart", "Zixin"],
     image: "/assets/work/care-bridge.jpg",
     github: "https://github.com/itz-Hiru/care-bridge",
@@ -94,11 +92,10 @@ const projects = [
     category: "Website Developing",
     title: "Audition Hive",
     link: "https://github.com/itz-Hiru/Blogging-Website-Frontend",
-    description:
-      "An intuitive website for creating, reading blogs.",
+    description: "An intuitive website for creating, reading blogs.",
     stack: ["Javascript", "Firebase", "AWS", "Tailwind", "ReactVite"],
     image: "/assets/work/audition-hive.png",
-    github: "https://github.com/itz-Hiru/Blogging-Website-Backend",
+    github: "https://github.com/itz-Hiru/Blogging-Website-Frontend",
   },
 ];
 
@@ -157,7 +154,7 @@ const Work = () => {
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>
-                          {project.num === "04" || "07"
+                          {project.num === "04" || project.num === "07"
                             ? "Live Project"
                             : "Download App"}
                         </p>
@@ -165,18 +162,51 @@ const Work = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
-                <Link href={project.github} target="_blank">
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/10 flex justify-center items-center group">
-                        <BsGithub className="text-white text-2xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>GitHub Repository</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+
+                {project.num === "07" ? (
+                  <>
+                    <Link href={project.github} target="_blank">
+                      <TooltipProvider delayDuration={100}>
+                        <Tooltip>
+                          <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/10 flex justify-center items-center group">
+                            <BsGithub className="text-white text-2xl group-hover:text-accent" />
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p>Frontend Repository</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </Link>
+                    <Link
+                      href="https://github.com/itz-Hiru/Blogging-Website-Backend"
+                      target="_blank"
+                    >
+                      <TooltipProvider delayDuration={100}>
+                        <Tooltip>
+                          <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/10 flex justify-center items-center group">
+                            <BsGithub className="text-white text-2xl group-hover:text-accent" />
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p>Backend Repository</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </Link>
+                  </>
+                ) : (
+                  <Link href={project.github} target="_blank">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/10 flex justify-center items-center group">
+                          <BsGithub className="text-white text-2xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>GitHub Repository</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
