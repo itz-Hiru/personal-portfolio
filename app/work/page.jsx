@@ -157,7 +157,7 @@ const Work = () => {
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>
-                          {project.num === "04" && "07"
+                          {project.num === "04" || "07"
                             ? "Live Project"
                             : "Download App"}
                         </p>
