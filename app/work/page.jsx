@@ -97,6 +97,16 @@ const projects = [
     image: "/assets/work/audition-hive.png",
     github: "https://github.com/itz-Hiru/Blogging-Website-Frontend",
   },
+  {
+    num: "08",
+    category: "Android Application",
+    title: "Aurudu Nakath Seettuwa",
+    link: "https://www.mediafire.com/file/8z2xwodd62cffs7/Avurudu_nakath_seettuwa.apk/file",
+    description: "An intuitive android app for Sinhala and Tamil New Year Nakath reminder.",
+    stack: ["Java", "Core-Java", "Android Studio"],
+    image: "/assets/work/aurudu-nakath-seettuwa.jpg",
+    github: "https://github.com/itz-Hiru/Aurudu-Nakath-Seettuwa",
+  },
 ];
 
 const Work = () => {
