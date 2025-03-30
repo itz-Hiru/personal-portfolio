@@ -175,7 +175,7 @@ const Work = () => {
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>
-                          {project.num === "04" || project.num === "07"
+                          {project.num === "04" || project.num === "07" || project.num === "09"
                             ? "Live Project"
                             : "Download App"}
                         </p>
@@ -183,7 +183,6 @@ const Work = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
-
                 {project.num === "07" || project.num === "09" ? (
                   <>
                     <Link href={project.github} target="_blank">
