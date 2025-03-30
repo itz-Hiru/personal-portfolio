@@ -102,10 +102,21 @@ const projects = [
     category: "Android Application",
     title: "Aurudu Nakath Seettuwa",
     link: "https://www.mediafire.com/file/8z2xwodd62cffs7/Avurudu_nakath_seettuwa.apk/file",
-    description: "An intuitive android app for Sinhala and Tamil New Year Nakath reminder.",
+    description:
+      "An intuitive android app for Sinhala and Tamil New Year Nakath reminder.",
     stack: ["Java", "Core-Java", "Android Studio"],
     image: "/assets/work/aurudu-nakath-seettuwa.jpg",
     github: "https://github.com/itz-Hiru/Aurudu-Nakath-Seettuwa",
+  },
+  {
+    num: "09",
+    category: "Website Developing",
+    title: "Book Review System",
+    link: "https://github.com/itz-Hiru/Book-Review-System-Frontend",
+    description: "An intuitive website for review books you read.",
+    stack: ["NodeJS", "Java Script", "TailwindCSS", "REST"],
+    image: "/assets/work/book-review-system.jpg",
+    github: "https://github.com/itz-Hiru/Book-Review-System-Frontend",
   },
 ];
 
@@ -173,7 +184,7 @@ const Work = () => {
                   </TooltipProvider>
                 </Link>
 
-                {project.num === "07" ? (
+                {project.num === "07" || project.num === "09" ? (
                   <>
                     <Link href={project.github} target="_blank">
                       <TooltipProvider delayDuration={100}>
@@ -188,7 +199,11 @@ const Work = () => {
                       </TooltipProvider>
                     </Link>
                     <Link
-                      href="https://github.com/itz-Hiru/Blogging-Website-Backend"
+                      href={
+                        project.num === "07"
+                          ? "https://github.com/itz-Hiru/Blogging-Website-Backend"
+                          : "https://github.com/itz-Hiru/Book-Review-System-Backend"
+                      }
                       target="_blank"
                     >
                       <TooltipProvider delayDuration={100}>
